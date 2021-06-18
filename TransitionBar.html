@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style> 
+    a {
+      text-decoration: none;
+      color: white;
+      display: block;
+      width: 100%; 
+    }
+    a:hover {
+      text-decoration: overline;
+    }
+    li {
+      width: 150px;
+      height: 20px;
+      background: #736fb9;
+      transition: width 2s, height 2s, background 3s, text-align 3s, border-left 1s;
+      text-align: center;
+      overflow: hidden;
+       color: white;
+       list-style-type: none;
+       padding-top: 3px;
+       
+       
+    }
+    
+    .active > li {
+      width: 100%;
+      list-style-type: none;
+      text-align: left;
+      background: none;
+    
+    }
+    
+    li:hover:not(.active > li){
+      width: 200px;
+      height: 100px;
+      background: #8c93bd;
+      text-align: center;
+      display: block;
+      border-left: #4c4894 2px solid;
+    }
+    .text{
+     background: #736fb9;
+     display: block;
+     padding-bottom: 2px;
+    }
+    
+    </style>
+</head>
+<body>
+  <h1>The transition Property</h1>
+
+<div> 
+	<ul>
+    	<li> <span class="text"> Home </span>
+        	<ul class="active" >
+            	<li><a href="#">Home</a></li>
+                <li><a href="#">Products</a></li>
+                 <li><a href="#">See more</a></li>
+            </ul>
+        </li>
+        <li><span class="text"> About Us </span>
+        	<ul class="active" >
+            	<li><a href="#">History</a></li>
+                <li><a href="#">Personal</a></li>
+                 <li><a href="#">Rules</a></li>
+            </ul>
+        </li>
+        <li> <span class="text"> Contact </span>
+        	<ul class="active" >
+            	<li><a href="#">Phones</a></li>
+                <li><a href="#">Emails @</a></li>
+                <li><a href="#">Fax</a></li>
+            </ul>
+        </li>
+    </ul>
+</div>
+</body>
+</html>
